@@ -7,6 +7,8 @@
             Menu menu = new Menu();
             menu.IniciarPrograma();
 
+            //TODO: modificadores de acesso
+
             //IRemuneravel funcionarioClt = new ContratoClt();
             //IRemuneravel estagiario = new Estagio();
 

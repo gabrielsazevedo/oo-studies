@@ -8,6 +8,8 @@ namespace oo_studies
 {
     internal class Menu
     {
+        Servico servico = new Servico();
+
         private string opcaoUsuario;
 
         public void IniciarPrograma()
@@ -57,13 +59,17 @@ namespace oo_studies
 
         private void ExibirMenuCadastro()
         {
-            // apenas pra teste
-            IRemuneravel funcionarioClt = new ContratoClt();
-            IRemuneravel estagiario = new Estagio();
+            Console.WriteLine("Informe o nome do funcionário");
+            string nomeFuncionario = Console.ReadLine();
 
-            FolhaDePagamento folhaDePagamento = new FolhaDePagamento();
+            Console.WriteLine("Informe o vínculo empregatício do funcionário \n (1) CLT \n (2) Não Possui (Estágio)");
+            string vinculoEmpregaticioUsuario = Console.ReadLine();
 
-            folhaDePagamento.Calcular(estagiario);
+            Console.WriteLine("Informe a matrícula do funcionário");
+            string matriculaFuncionario = Console.ReadLine();
+
+            //Serviço precisa ser público pro código funcionar? Alterar isso, serviço é um objeto
+            servico.ValidarFuncionario(nomeFuncionario, vinculoEmpregaticioUsuario, matriculaFuncionario);
         }
     }
 }
