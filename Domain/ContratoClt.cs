@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace oo_studies
+namespace oo_studies.Domain
 {
-    internal class Estagio : IRemuneravel
+    internal class ContratoClt : IRemuneravel
     {
         public decimal Remuneracao()
         {
-            return 1500;
+            return 5000;
         }
     }
 }

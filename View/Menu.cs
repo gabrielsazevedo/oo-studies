@@ -4,14 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace oo_studies
+namespace oo_studies.View
 {
     internal class Menu
     {
-        Servico servico = new Servico();
-
-        private string opcaoUsuario;
-
         public void IniciarPrograma()
         {
             ExibirMenuInicial();

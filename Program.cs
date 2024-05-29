@@ -1,4 +1,6 @@
-﻿namespace oo_studies
+﻿using oo_studies.View;
+
+namespace oo_studies
 {
     internal class Program
     {
